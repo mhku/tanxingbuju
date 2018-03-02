@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>结构伪类</title>
+    <style>
+      #tbl{
+        width:400px;
+        border:1px solid #000;
+        border-collapse:collapse;
+      }
+      #tbl td{
+        border:1px solid #000;
+      }
+
+      #tbl tr:first-child{
+        background-color:yellow;
+      }
+
+      #tbl tr:last-child{
+        background-color:red;
+      }
+
+      #tbl tr:nth-child(2) td:nth-child(3){
+        background-color:orange;
+      }
+
+      #tbl td:not(:first-child){
+        font-style:italic;
+        font-weight:bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="tbl">
+      <tr>
+        <td>张无忌</td>
+        <td>张学友</td>
+        <td>张三丰</td>
+        <td>张学良</td>
+      </tr>
+      <tr>
+        <td>张无忌</td>
+        <td>张学友</td>
+        <td>张三丰</td>
+        <td>张学良</td>
+      </tr>
+      <tr>
+        <td>张无忌</td>
+        <td>张学友</td>
+        <td>张三丰</td>
+        <td>张学良</td>
+      </tr>
+      <tr>
+        <td>张无忌</td>
+        <td>张学友</td>
+        <td>张三丰</td>
+        <td>张学良</td>
+      </tr>
+    </table>
+  </body>
+</html>

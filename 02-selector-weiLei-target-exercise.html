@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #show{
+        width:165px;
+        height:175px;
+        border:1px solid #ddd;
+        padding:20px;
+      }
+      #show img{
+        display:none;
+      }
+      #show img:target{
+        display:block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a href="#img1">图片1</a>
+      <a href="#img2">图片2</a>
+      <a href="#img3">图片3</a>
+    </p>
+    <div id="show">
+      <img id="img1" src="img/index/index_hot_food_img1.png">
+      <img id="img2" src="img/index/index_hot_food_img2.png">
+      <img id="img3" src="img/index/index_hot_food_img3.png">
+    </div>
+  </body>
+</html>

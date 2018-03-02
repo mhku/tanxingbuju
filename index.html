@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            border: 2px solid #000000;
+            /*变为弹性布局的容器*/
+            display: flex;
+            /*指定主轴及其排布方向*/
+            flex-direction: row;
+            /*指定换行方式*/
+            flex-wrap: wrap;
+            /*指定对齐方式 两端对齐*/
+            justify-content: space-between;
+        }
+        .c1,.c2,.c3{
+            width: 200px;
+            height: 200px;
+        }
+        .c1{background: red;}
+        .c2{background: green;}
+        .c3{background: blue;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #container{
+        border:2px solid #000;
+      }
+      #container .c1{
+        width:200px;
+        height:200px;
+        background:red;
+        float:left;
+      }
+
+      .clear:after{
+        content:"";
+        /*变为块级 或 table*/
+        display:block;
+        /*清除两端浮动*/
+        clear:both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="clear">
+      <div class="c1"></div>
+      <div class="c1"></div>
+      <div class="c1"></div>
+      <!--
+        1、最后一个子元素位置处 - :after
+        2、必须放块级 或 table 元素 - display:block / table;
+        3、必须为空元素 - content:"";
+        4、clear:both
+      -->
+    </div>
+  </body>
+</html>

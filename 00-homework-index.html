@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>学子商城首页</title>
+    <style>
+      ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+      img{
+        vertical-align:middle;
+      }
+      div.main{
+        width:960px;
+        margin:0 auto;
+      }
+      #banner{
+        width:960px;
+        height:384px;
+        overflow:hidden;
+        /*相对定位：配合 a.ck-slide 的绝对定位*/
+        position:relative;
+      }
+      #banner>ul.banner-img>li{
+        float:left;
+      }
+      #banner>ul.banner-img img{
+        width:960px;
+      }
+
+      #banner>a.ck-slide{
+        /*绝对定位，top偏移属性，宽度，高度，边框倒角，背景颜色，透明度*/
+        position:absolute;
+        top:157px;
+        width:35px;
+        height:70px;
+        border-radius:3px;
+        background-color:#000;
+        opacity:0.15;
+      }
+      #banner>a.ck-left{
+        left:5px;
+        background:#000 url(img/index/arrow-left.png) no-repeat center;
+      }
+      #banner>a.ck-right{
+        right:5px;
+        background:#000 url(img/index/arrow-right.png) no-repeat center;
+      }
+
+      #banner ul.indicators li{
+        /*宽度，高度，边框倒角，背景颜色，左浮动，右外边距*/
+        width:12px;
+        height:12px;
+        border-radius:50%;
+        background-color:#fff;
+        float:left;
+        margin-right:5px;
+        cursor:pointer;
+      }
+      #banner ul.indicators{
+        position:absolute;
+        left:446px;
+        bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- 1、页面头部 - LOGO ，搜索框 ... -->
+      <!-- 2、页面主体内容部分 -->
+      <!-- 2.1 banner部分 -->
+      <div id="banner">
+        <!-- 1、列表：四幅显示图像 -->
+        <ul class="banner-img">
+          <li>
+            <a href="#">
+              <img src="img/index/banner1.png">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/index/banner2.png">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/index/banner3.png">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/index/banner4.png">
+            </a>
+          </li>
+        </ul>
+        <!-- 2、链接：左右方向箭头(绝对定位) -->
+        <a href="#" class="ck-slide ck-left"></a>
+        <a href="#" class="ck-slide ck-right"></a>
+        <!-- 3、列表：导航小圆点(绝对定位) -->
+        <ul class="indicators">
+          <li></li> 
+          <li></li> 
+          <li></li> 
+          <li></li> 
+        </ul> 
+      </div>
+      <!-- 2.2 1F 首页推荐-->
+      <!-- 2.3 2F 最新上架 -->
+      <!-- 2.4 3F 热销单品 -->
+      <!-- 3、页面底部 - 品质保障，私人订制... -->
+    </div>
+  </body>
+</html>
